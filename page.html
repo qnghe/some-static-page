@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>你要的页面</title>
+    <style>
+        html, body {height: 100%;}
+        html, body, div, header, main, ul, li, input {margin: 0; padding: 0; box-sizing: border-box;}
+        html {font-size: 62.5%;overflow: hidden;}
+        body {background-color: #efefef; font-size: 1.4rem;overflow: auto;}
+        ul {list-style: none;}
+        .header {position: sticky; top: 0; padding: 1rem .8rem;background:#fff;box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);border-bottom-left-radius: .4rem;border-bottom-right-radius: .4rem; z-index: 10;}
+        #txt-input {padding-left: 1.2rem;width: 28rem; height: 3.4rem; border: 1px solid #eee; border-radius: .4rem;}
+        #upload, #submit-btn {display:inline-block; padding:0 1.2rem; height: 3.2rem; line-height:3.2rem; border-radius: .4rem;background-color:#2270ff;color:#fff;cursor: pointer;}
+        #submit-btn {background-color: #9318e0;}
+        #container {margin: 1rem .8rem;z-index: 9;}
+        .btn-wrap {padding: .8rem 1.6rem; text-align: center;}
+        .item {display: flex; align-items: center; justify-content: space-around; margin: 1.2rem 0; padding-left: 1rem; box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.1);background-color: #fff; border-radius: .6rem; }
+        .select-box {position:relative; width: 2.8rem; height: 2.8rem; border: 1px solid #aaa; border-radius: 50%; cursor: pointer; transition: all .3s ease-in;-webkit-tap-highlight-color:transparent;}
+        .select-box:hover {border-color: #30fd5c;}
+        .selected {background-color: #30fd5c; border-color: #30fd5c;}
+        .check-icon {position:absolute; top: 18%; left: 40%; display: inline-block; width: 8px; height: 16px; border: 2px solid #fff;border-top: none;border-left: none; transform: rotate(45deg);}
+        .item-content {position:relative; flex: 1; padding: 2rem .8rem;}
+        .delete-icon {position: absolute; top: 5px; right: 10px;}
+        .delete-icon:hover {color: #f00;}
+        .time {position: absolute; bottom: 5px; left: 5px; color: #aaa; font-size: 1.2rem;}
+        .content {padding: 1rem 0;}
+    </style>
+</head>
+<body>
+    <header class="header">
+        <input id="txt-input" type="text">
+        <div id="upload">上传</div>
+        <div class="btn-wrap">
+            <div id="submit-btn">提交</div>
+        </div>
+    </header>
+    <main id="container">
+        <ul>
+            <li class="item">
+                <div class="select-box"><div class="check-icon"></div>
+                </div>
+                <div class="item-content">
+                    <div class="delete-icon">X</div>
+                    <div class="time">2019-12-4 14:00:02</div>
+                    <div class="content">Xxxxxxxxxxxx, ha what is S</div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="select-box"><div class="check-icon"></div></div>
+                <div class="item-content">
+                    <div class="delete-icon">X</div>
+                    <div class="time">2019-12-4 14:00:02</div>
+                    <div class="content">Xxxxxxxxxxxx, ha what is S</div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="select-box"><div class="check-icon"></div></div>
+                <div class="item-content">
+                    <div class="delete-icon">X</div>
+                    <div class="time">2019-12-4 14:00:02</div>
+                    <div class="content">Xxxxxxxxxxxx, ha what is S</div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="select-box"><div class="check-icon"></div></div>
+                <div class="item-content">
+                    <div class="delete-icon">X</div>
+                    <div class="time">2019-12-4 14:00:02</div>
+                    <div class="content">Xxxxxxxxxxxx, ha what is S</div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="select-box"><div class="check-icon"></div></div>
+                <div class="item-content">
+                    <div class="delete-icon">X</div>
+                    <div class="time">2019-12-4 14:00:02</div>
+                    <div class="content">Xxxxxxxxxxxx, ha what is S</div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="select-box"><div class="check-icon"></div></div>
+                <div class="item-content">
+                    <div class="delete-icon">X</div>
+                    <div class="time">2019-12-4 14:00:02</div>
+                    <div class="content">Xxxxxxxxxxxx, ha what is S</div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="select-box"><div class="check-icon"></div></div>
+                <div class="item-content">
+                    <div class="delete-icon">X</div>
+                    <div class="time">2019-12-4 14:00:02</div>
+                    <div class="content">Xxxxxxxxxxxx, ha what is S</div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="select-box"><div class="check-icon"></div></div>
+                <div class="item-content">
+                    <div class="delete-icon">X</div>
+                    <div class="time">2019-12-4 14:00:02</div>
+                    <div class="content">Xxxxxxxxxxxx, ha what is S</div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="select-box"><div class="check-icon"></div></div>
+                <div class="item-content">
+                    <div class="delete-icon">X</div>
+                    <div class="time">2019-12-4 14:00:02</div>
+                    <div class="content">Xxxxxxxxxxxx, ha what is S</div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="select-box"><div class="check-icon"></div></div>
+                <div class="item-content">
+                    <div class="delete-icon">X</div>
+                    <div class="time">2019-12-4 14:00:02</div>
+                    <div class="content">Xxxxxxxxxxxx, ha what is S</div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="select-box"><div class="check-icon"></div></div>
+                <div class="item-content">
+                    <div class="delete-icon">X</div>
+                    <div class="time">2019-12-4 14:00:02</div>
+                    <div class="content">Xxxxxxxxxxxx, ha what is S</div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="select-box"><div class="check-icon"></div></div>
+                <div class="item-content">
+                    <div class="delete-icon">X</div>
+                    <div class="time">2019-12-4 14:00:02</div>
+                    <div class="content">Xxxxxxxxxxxx, ha what is S</div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="select-box"><div class="check-icon"></div></div>
+                <div class="item-content">
+                    <div class="delete-icon">X</div>
+                    <div class="time">2019-12-4 14:00:02</div>
+                    <div class="content">Xxxxxxxxxxxx, ha what is S</div>
+                </div>
+            </li>
+            <li class="item">
+                <div class="select-box"><div class="check-icon"></div></div>
+                <div class="item-content">
+                    <div class="delete-icon">X</div>
+                    <div class="time">2019-12-4 14:00:02</div>
+                    <div class="content">Xxxxxxxxxxxx, ha what is S</div>
+                </div>
+            </li>
+        </ul>
+    </main>
+    <script>
+        var selectBoxEls = document.querySelectorAll('.select-box');
+        for (var i = 0; i < selectBoxEls.length; i++) {
+            var el = selectBoxEls[i];
+            el.addEventListener('click', function(e) {
+                console.log(this)
+                if (/selected/.test(this.className)) {
+                    this.classList.remove('selected');
+                } else {
+                    this.classList.add('selected');
+                }
+            });
+        }
+    </script>
+</body>
+</html>
